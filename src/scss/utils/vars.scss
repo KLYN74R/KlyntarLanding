@@ -1,8 +1,8 @@
 // Font
-$mainFont                : 'Roboto', Helvetica, Arial, sans-serif;
+$mainFont                : 'Open Sans', Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #151515;
+$mainFontColor           : #191919;
 $mainFontSize            : 16px;
 $mainFontWeight          : 400;
 
@@ -10,21 +10,19 @@ $fullHdWidth             : 1700px;
 $desktopWidth            : 1400px;
 $smDesktopWidth          : 1024px;
 $tableWidth              : 768px;
-$phoneWidth              : 480px;
+$phoneWidth              : 540px;
 $smPhoneWidth            : 320px;
 
 // Colors
 
-//// background
-//$darkGreyBg              : #222222;
-//$darkGreenBg             : #13402C;
-//$midGreenBg              : #276E44;
-//$lightGreenBg            : #508835;
-//$lightCreamBg            : #F2F6E9;
-//
-//// font
-//$midGreyFont             : #5F5F5F;
-//$lightGreyFont           : #a1a1a1;
-//$darkGreenFont           : #13402C;
-//$midGreenFont            : #276e44;
-//$lightGreenFont          : #79d84a;
+// background
+$blue-light-bg             : #3F84F7;
+$blue-dark-bg              : #3874DA;
+$grey-light-bg             : #E6E6E6;
+$grey-dark-bg              : #6A6A6A;
+$yellow-bg                 : #FFD301;
+$dark-bg                   : #24303A;
+
+// font
+$blue-font                 : #3874DA;
+$grey-dark-font            : #BABBBB;

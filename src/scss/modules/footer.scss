@@ -1,0 +1,11 @@
+footer {
+  background: $dark-bg;
+  font-size: rem(14px);
+
+  .copyright {
+    color: #fff;
+  }
+  .authors {
+    color: $grey-dark-font;
+  }
+}

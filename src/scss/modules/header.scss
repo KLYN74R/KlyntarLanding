@@ -1,7 +1,173 @@
 header {
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  position: relative;
 
+  /* Menu */
+  nav {
+    background: $blue-light-bg;
+    color: #fff;
+
+    .logo {
+      display: block;
+      img {
+        height: rem(50px);
+      }
+    }
+
+    ul.desktop-menu {
+      display: flex;
+      align-items: center;
+
+      li {
+        display: inline-block;
+        margin-right: rem(45px);
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .burger-btn {
+      cursor: pointer;
+      border: 2px solid $blue-dark-bg;
+      height: 50px;
+
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+        &:before, &:after {
+          position: relative;
+          display: block;
+          content: '';
+          width: 25px;
+          height: 2px;
+          background: #fff;
+        }
+        &:before {
+          top: -10px;
+        }
+        &:after {
+          top: 10px;
+        }
+      }
+    }
+
+    .mobile-menu {
+      display: none;
+      z-index: 1000;
+      background: $blue-light-bg;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      .close-btn {
+        cursor: pointer;
+        border: 2px solid $blue-dark-bg;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        span {
+          display: block;
+          width: 25px;
+          height: 2px;
+          background: #fff;
+          position: relative;
+
+          &:first-child {
+            transform: rotate(45deg);
+          }
+          &:last-child {
+            transform: rotate(-45deg);
+            top: -2px;
+          }
+        }
+      }
+
+      ul {
+        a {
+          font-size: rem(25px);
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* Main logo & links */
+  .main-logo {
+    position: relative;
+    height: 100%;
+    padding-bottom: 125px;
+    &>div {
+      background: rgba(202,203,206, 0.5);
+
+      .logo {
+        font-family: 'Montserrat', Arial;
+        font-size: rem(125px);
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(31,25,32,0.61);
+
+        @media screen and (max-width: $tableWidth) {
+          font-size: 90px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+          font-size: 65px;
+        }
+      }
+
+      ul {
+        a {
+          img {
+            height: rem(55px);
+            @media screen and (max-width: $tableWidth) {
+              height: 40px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+              height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+    /* Ukraine's flag */
+  .ukraine-flag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    div {
+      width: rem(200px);
+      height: rem(65px);
+      &:first-child {
+        background: #005BBB;
+      }
+      &:last-child {
+        background: #FFD500;
+      }
+    }
+  }
 
 }
