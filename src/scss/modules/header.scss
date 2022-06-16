@@ -7,8 +7,14 @@ header {
 
   /* Menu */
   nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
     background: $blue-light-bg;
     color: #fff;
+    border-bottom: 2px solid $blue-dark-bg;
 
     .logo {
       display: block;
@@ -119,7 +125,7 @@ header {
   .main-logo {
     position: relative;
     height: 100%;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
     &>div {
       background: rgba(202,203,206, 0.5);
 

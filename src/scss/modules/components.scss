@@ -1,0 +1,208 @@
+/* Who we are? */
+#about {
+  .art {
+    height: rem(450px);
+  }
+
+  .text {
+    position: relative;
+    min-height: rem(475px);
+    .block {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $grey-light-bg;
+      width: rem(300px);
+      height: rem(450px);
+    }
+    p {
+      position: relative;
+      padding-top: rem(30px);
+      padding-left: rem(10px);
+      z-index: 20;
+      font-size: rem(20px);
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+}
+
+/* Security & Services */
+#security, #services {
+  position: relative;
+
+  .split-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .blue-bg {
+    background: $blue-light-bg;
+  }
+  .grey-bg {
+    background: $grey-light-bg;
+
+    img {
+      width: rem(440px);
+
+      @media screen and (max-width: $phoneWidth) {
+        width: rem(400px);
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+  }
+}
+
+#services {
+  .grey-bg {
+    img {
+      width: rem(600px);
+
+      @media screen and (max-width: 1220px) {
+        width: rem(440px);
+      }
+      @media screen and (max-width: $phoneWidth) {
+        width: rem(400px);
+      }
+    }
+  }
+}
+
+/* The Fast And Cheap */
+#fastAndCheap {
+  background: $yellow-bg;
+
+  .section-title {
+    span {
+      text-decoration: line-through;
+    }
+  }
+
+  span, p {
+    color: $mainFontColor !important;
+  }
+  .read-more-btn {
+    background: rgba(0,0,0,0.3);
+  }
+
+  .art {
+    height: rem(450px);
+  }
+}
+
+/* Documentation */
+#documentation {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    font-size: rem(20px);
+  }
+}
+
+/* Download & Get FREE KLY */
+#downloadAndFreeKly {
+  position: relative;
+
+  .split-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .blue-bg {
+    background: $blue-light-bg;
+  }
+  .dark-blue-bg {
+    background: $blue-dark-bg;
+
+    .cat {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: rem(250px);
+    }
+  }
+
+  .content {
+    position: relative;
+
+    .download-text {
+      img {
+        height: rem(90px);
+      }
+    }
+
+    .read-more-btn {
+      border: 15px solid #3E81F1;
+      border-radius: 15px;
+    }
+  }
+
+  .free-kly {
+    .section-title {
+      font-style: italic;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    ol {
+      color: #fff;
+      li {
+        margin-top: rem(15px);
+        list-style-type: decimal;
+      }
+    }
+  }
+}
+
+/* Links */
+#links {
+  a {
+    display: block;
+    font-family: 'Montserrat';
+    font-size: rem(25px);
+    line-height: rem(70px);
+    text-transform: uppercase;
+    color: $mainFontColor;
+    transition: all 0.2s;
+    font-weight: 400;
+    &:hover {
+      font-weight: 600;
+      color: #3874DA;
+    }
+  }
+
+  .text-block {
+    position: relative;
+
+    .block {
+      position: absolute;
+      background: $grey-light-bg;
+      width: 60%;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+
+    p {
+      position: relative;
+      color: $mainFontColor;
+    }
+  }
+}
