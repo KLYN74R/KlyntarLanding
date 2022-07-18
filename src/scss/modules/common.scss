@@ -1,3 +1,10 @@
+.link-text {
+  color: $mainFontColor;
+  &:hover {
+    color: $mainFontColor;
+  }
+}
+
 .section-title {
   font-size: rem(35px);
   font-weight: 900;
@@ -86,4 +93,11 @@ $base: 0.6rem;
       transform: translateY($base * 8) scale(0.5);
     }
   }
+}
+
+//
+// Colors
+//
+.text-blue {
+  color: $blue-dark-font;
 }

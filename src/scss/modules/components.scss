@@ -7,6 +7,7 @@
   .text {
     position: relative;
     min-height: rem(475px);
+    max-width: 450px;
     .block {
       z-index: 10;
       position: absolute;
@@ -21,7 +22,7 @@
       padding-top: rem(30px);
       padding-left: rem(10px);
       z-index: 20;
-      font-size: rem(20px);
+      font-size: rem(18px);
       font-weight: 500;
       font-style: italic;
     }
@@ -56,6 +57,10 @@
 
   .content {
     position: relative;
+
+    p {
+      max-width: 480px;
+    }
   }
 }
 
@@ -82,6 +87,10 @@
     span {
       text-decoration: line-through;
     }
+  }
+
+  p {
+    max-width: 600px;
   }
 
   span, p {
