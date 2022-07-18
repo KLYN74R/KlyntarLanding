@@ -1,10 +1,10 @@
-##Launch
+## Launch
 
 npm install
 
 npm run start
 
-##Deploy
+## Deploy
 
 npm run build
 
