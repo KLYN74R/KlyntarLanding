@@ -125,14 +125,13 @@ header {
   .main-logo {
     position: relative;
     height: 100%;
-    padding-bottom: 100px;
     &>div {
-      background: rgba(202,203,206, 0.5);
+      background: rgba(117, 122, 138, 0.33);
 
       .logo {
-        font-family: 'Montserrat', Arial;
+        font-family: 'Major Mono Display', Arial;
         font-size: rem(125px);
-        color: #fff;
+        color: $mainFontColor;
         text-shadow: 2px 2px 5px rgba(31,25,32,0.61);
 
         @media screen and (max-width: $tableWidth) {
