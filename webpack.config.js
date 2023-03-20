@@ -7,11 +7,9 @@ module.exports = (env, argv) => {
   const isProd = argv.mode === 'production'
   const isDev = !isProd
 
-  // Динамическое название файлов (+хеш для продакшн версии)
   const filename = (ext) =>
     isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`
 
-  // Плагины, вынесенные в функцию
   const plugins = () => {
     const base = [
       new HtmlWebpackPlugin({
@@ -34,25 +32,20 @@ module.exports = (env, argv) => {
   }
 
   return {
-    target: 'web', // чтобы параметр hot в DevServer работал
+    target: 'web',
     context: path.resolve(__dirname, 'src'),
     entry: {
-      main: ['./index.js'] // относительный путь (папка src)
+      main: ['./index.js']
     },
     output: {
-      path: path.resolve(__dirname, 'dist'), // папка
-      clean: true, // очищение папки dist перед сохранением
-      filename: filename('js')// текущим названием будет main
+      path: path.resolve(__dirname, 'dist'),
+      clean: true,
+      filename: filename('js')
     },
     resolve: {
-      // '../path/file.js'
-      // '../path/file'
       extensions: ['.js'],
-      // '../../path/file'
-      // '@/path/file'
       alias: {
-        '@': path.resolve(__dirname, 'src'),
-        '@core': path.resolve(__dirname, 'src', 'core')
+        '@': path.resolve(__dirname, 'src')
       }
     },
     devServer: {
@@ -62,17 +55,13 @@ module.exports = (env, argv) => {
     },
     devtool: isDev ? 'source-map' : false,
     plugins: plugins(),
-    // Описание лоадеров (loaders)
     module: {
       rules: [
         {
           test: /\.s[ac]ss$/i,
           use: [
-            // Выносит css отдельно от html файла
             MiniCssExtractPlugin.loader,
-            // Translates CSS into CommonJS
             'css-loader',
-            // Compiles Sass to CSS
             'sass-loader',
           ],
         },

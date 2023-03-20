@@ -20,7 +20,7 @@
       <div class="container pt-1 pb-1 d-flex align-items-center justify-content-between justify-content-lg-start px-4 px-lg-0">
 
         <a href="#home" class="logo me-5">
-          <img src="./src/img/Klyntar/menu_logo.png" alt="Klyntar.png">
+          <img src="./src/img/Klyntar/logo.png" alt="Klyntar.png" class="rounded">
         </a>
 
         <ul class="desktop-menu d-lg-flex d-none">
@@ -28,7 +28,6 @@
           <li><a href="#security">Features</a></li>
           <li><a href="#documentation">Documentation</a></li>
           <li><a href="#download">Download</a></li>
-          <li><a href="#freeKly">Get 100KLY</a></li>
           <li><a href="#links">Links</a></li>
         </ul>
 
@@ -46,7 +45,6 @@
             <li><a href="#security" onclick="closeMenu()">Features</a></li>
             <li><a href="#documentation" onclick="closeMenu()">Documentation</a></li>
             <li><a href="#download" onclick="closeMenu()">Download</a></li>
-            <li><a href="#freeKly" onclick="closeMenu()">Get 100KLY</a></li>
             <li><a href="#links" onclick="closeMenu()">Links</a></li>
           </ul>
         </div>
@@ -77,13 +75,6 @@
         </ul>
       </div>
     </div>
-
-    <!-- Ukraine's flag
-    <div class="ukraine-flag">
-      <div></div>
-      <div></div>
-    </div> -->
-
   </header>
 
   <!-- Who we are -->
@@ -104,7 +95,7 @@
           </span>
           <br>
           <strong><a href="https://mastering.klyntar.org/" class="link-text" target="_blank">KLYNTAR</a></strong> — ukrainian startup that tryna go
-          beyound our current understaing of the crypto
+          beyond our current understand of the crypto
           world - that today, unfortunately, has lack of technically
           original projects...<br>
           <br>
@@ -268,24 +259,20 @@
     </div>
   </section>
 
-  <!-- Donwload & Get FREE KLY -->
+  <!-- Download -->
   <section id="downloadAndFreeKly">
     <div class="split-bg container-fluid h-100">
-      <div class="row h-100">
-        <div id="downloadBg" class="col-12 col-lg-6 blue-bg h-lg-100"></div>
-        <div id="freeKlyBg" class="col-12 col-lg-6 dark-blue-bg h-lg-100">
-          <img class="cat d-none d-xl-block" src="./src/img/common/simon-cat.png" alt="Cat.png">
-        </div>
+      <div class="row h-100 blue-bg">
       </div>
     </div>
 
     <div class="container content py-2 py-lg-5 h-100">
       <div class="row py-5">
         <!-- Download -->
-        <div id="download" class="pb-4 pb-lg-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-center">
+        <div id="download" class="pb-4 pb-lg-0 col-12 d-flex flex-column justify-content-start align-items-center">
           <span class="section-title text-white d-block pb-5">Download KLYNTAR</span>
           <div class="download-text d-flex justify-content-center align-items-center mb-3">
-            <img class="d-block me-4" src="./src/img/social/github.png" alt="Github.png">
+            <img class="d-block me-4" src="./src/img/social/github_black.png" alt="Github.png">
             <p class="section-text d-block">
               Read the set up instruction.<br>
               You will need GitHub & Docker
@@ -298,67 +285,9 @@
           </div>
           <a href="https://github.com/KLYN74R/KlyntarCore#build" target="_blank" class="read-more-btn mt-5">Click to get KLYNTAR</a>
         </div>
-        <!-- FREE KLY -->
-        <div id="freeKly" class="free-kly mt-5 mt-lg-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-center">
-          <div class="pt-4 pt-lg-0">
-            <span class="section-title text-white d-block pb-4">GET FREE 100 KLY</span>
-            <p class="section-text d-block">
-              For our first users we are ready to share 100 KLYs<br>
-              that are used to make transactions in our system.<br>
-              <br>
-              <b><i>Note</i></b>: other 80% of KLYs will be shared soon!<br>
-              <br>
-              To get our tokens you need:<br>
-              <ol>
-                <li>
-                  Read our documentation<br>
-                  (<a href="ru.mastering.klyntar.org">ru.mastering.klyntar.org</a>)
-                </li>
-                <li>
-                  Download KLYNTAR<br>
-                  (<a href="ru.mastering.klyntar.org">github.com/klyntar/download</a>)
-                </li>
-                <li>
-                  Create your account in system<br>
-                  (<a href="ru.mastering.klyntar.org">klyntar-docs/register.html</a>)
-                </li>
-                <li>
-                  Send the hash of your wallet in KLYNTAR<br>
-                  on our email: <b><a href="mailto:klyntar@gmail.com">klyntar@gmail.com</a></b>
-                </li>
-                <li>
-                  PLEASE,add your first feelings abotu us<br>
-                  & about our documentation in the letter.<br>
-                  We appreciate it. Let’s build future together!
-                </li>
-              </ol>
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-
-  <!-- fix absolute position -->
-  <script>
-    const downloadBg = document.querySelector('#downloadBg')
-    const freeKlyBg = document.querySelector('#freeKlyBg')
-    const download = document.querySelector('#download')
-    const freeKly = document.querySelector('#freeKly')
-
-    const fixDownloadPosition = () => {
-      if (window.innerWidth <= 992) {
-        downloadBg.style.height = download.clientHeight + 80 + 'px'
-        freeKlyBg.style.height = freeKly.clientHeight + 80 + 'px'
-      }
-      else {
-        downloadBg.style.height = '100%'
-        freeKlyBg.style.height = '100%'
-      }
-    }
-    fixDownloadPosition()
-    window.addEventListener('resize', fixDownloadPosition)
-  </script>
 
   <!-- Links -->
   <section id="links" class="pb-3">
@@ -381,8 +310,7 @@
       <div class="text-block mt-5">
         <div class="block"></div>
         <p class="section-text pt-2 ps-2">
-          *We appreciate ALL feedback you’re sending us. It helps us to make our system better.<br>
-          Big “thanks” for all fans!)
+          *We appreciate ALL feedback you’re sending us!<br>It helps us to make our system better.
         </p>
       </div>
     </div>
@@ -390,11 +318,8 @@
 
   <!-- footer -->
   <footer class="text-center py-5">
-    <span class="copyright d-block mb-4">© KLYNTAR <span id="currentYear"></span></span>
-    <span class="authors">by Vlad Chernenko & Ivan Ushkov with honor  (◣_◢)</span>
-    <script>
-      document.querySelector('#currentYear').textContent = new Date().getFullYear()
-    </script>
+    <span class="copyright d-block mb-4">© KLYNTAR 2023</span>
+    <span class="authors">by Vlad Chernenko & Ivan Ushkov </span>
   </footer>
 
 </body>
